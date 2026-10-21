@@ -74,10 +74,10 @@ export function renderHero(root, data) {
           </div>
         </div>
 
-        <div class="flex justify-center lg:justify-end">
-          <figure class="panel rounded-3xl p-4 max-w-xs w-full">
+        <div class="flex min-w-0 justify-center lg:justify-end">
+          <figure class="panel rounded-3xl p-4 min-w-0 max-w-xs w-full">
             <img src="${escapeHtml(profile.photo || '')}" alt="Profilbild på ${escapeHtml(profile.name || 'Ulrik Rosberg')}" class="w-full aspect-square object-cover rounded-2xl border border-slate-700" loading="eager" decoding="async" />
-            <figcaption class="mt-3 text-xs mono text-slate-400">profile.photo => ${escapeHtml(profile.photo || '')}</figcaption>
+            <figcaption class="mt-3 text-xs mono text-slate-400 [overflow-wrap:anywhere]">profile.photo => ${escapeHtml(profile.photo || '')}</figcaption>
           </figure>
         </div>
       </div>
