@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio för Ulrik Rosberg - Systemutvecklare med fokus på ren arkitektur och moderna UI." />
+  <title>Ulrik Rosberg | Portfölj</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="./assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neon: {
+              400: '#2dd4bf',
+              500: '#14b8a6'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(45,212,191,.25), 0 0 24px rgba(45,212,191,.12)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    body {
+      background: radial-gradient(circle at 15% 15%, rgba(20, 184, 166, 0.08), transparent 35%),
+                  radial-gradient(circle at 85% 5%, rgba(15, 23, 42, 0.45), transparent 30%),
+                  #020617;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(148, 163, 184, 0.04) 0px,
+        rgba(148, 163, 184, 0.04) 1px,
+        transparent 2px,
+        transparent 4px
+      );
+      opacity: 0.35;
+      mix-blend-mode: screen;
+      z-index: 40;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(148, 163, 184, 0.08) 0.5px, transparent 0.5px);
+      background-size: 3px 3px;
+      opacity: 0.12;
+      z-index: 41;
+    }
+    .panel {
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      background: linear-gradient(165deg, rgba(15, 23, 42, 0.75), rgba(2, 6, 23, 0.9));
+      backdrop-filter: blur(4px);
+    }
+    .panel:hover {
+      border-color: rgba(45, 212, 191, 0.45);
+      box-shadow: 0 0 0 1px rgba(45,212,191,.2), 0 0 24px rgba(45,212,191,.09);
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  </style>
+</head>
+<body data-page="home" class="text-slate-100 antialiased min-h-screen">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-teal-300 focus:text-slate-950 focus:px-3 focus:py-2 focus:rounded">Hoppa till innehåll</a>
+
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur">
+    <nav aria-label="Huvudnavigering" class="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <a href="./index.html" class="font-semibold tracking-wide text-teal-300"><span data-owner-name>Ulrik Rosberg</span></a>
+      <ul class="flex items-center gap-4 sm:gap-6 text-sm text-slate-300">
+        <li><a href="#about" class="hover:text-teal-300 transition">Om</a></li>
+        <li><a href="./projects.html" class="hover:text-teal-300 transition">Projekt</a></li>
+        <li><a href="#services" class="hover:text-teal-300 transition">Tjänster</a></li>
+        <li><a href="#contact" class="hover:text-teal-300 transition">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-14 space-y-10 sm:space-y-14">
+    <div id="page-error-root" aria-live="polite"></div>
+
+    <section id="about" aria-label="Introduktion">
+      <div id="hero-root"></div>
+    </section>
+
+    <section id="services" aria-label="Tjänster" class="space-y-4">
+      <div class="flex items-center justify-between gap-4">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Tjänster</h2>
+        <span class="mono text-xs sm:text-sm text-slate-400">TJANSTER_GRID.v1</span>
+      </div>
+      <div id="services-root"></div>
+    </section>
+
+    <section aria-label="Utvalda projekt" class="space-y-4">
+      <div class="flex items-center justify-between gap-4">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Utvalda projekt</h2>
+        <a href="./projects.html" class="text-sm text-teal-300 hover:text-teal-200 transition">Visa alla projekt</a>
+      </div>
+      <div id="featured-projects-root"></div>
+    </section>
+
+    <section id="contact" aria-label="Kontakt" class="panel rounded-2xl p-6 sm:p-8">
+      <p class="mono text-xs uppercase tracking-[0.2em] text-slate-400">Kontakt</p>
+      <h2 class="mt-2 text-xl sm:text-2xl font-semibold">Redo att bygga nästa lösning?</h2>
+      <p class="mt-3 text-slate-300 max-w-2xl">Använd knapparna i hero-sektionen eller länkarna i footern för att kontakta mig.</p>
+    </section>
+  </main>
+
+  <footer id="footer-root" class="border-t border-slate-800/80 mt-8"></footer>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "name": "Ulrik Rosberg",
+    "title": "Systemutvecklare",
+    "location": "Sverige",
+    "bio": "Jag är en systemutvecklare med fokus på ren arkitektur, robusta API:er och moderna användargränssnitt. Jag bygger lösningar som är hållbara över tid och enkla att vidareutveckla.",
+    "photo": "/assets/image/profile.jpg",
+    "birthDate": "1993-10-22",
+    "badges": [
+      "ASP.NET Core",
+      "Systemarkitekt",
+      "Angular",
+      "React",
+      "SQL"
+    ]
+  },
+  "links": {
+    "github": "https://github.com/UlrikJonasLove",
+    "linkedin": "https://www.linkedin.com/in/ulrikrosberg/",
+    "email": "mailto:ulrik.rosberg@outlook.com"
+  },
+  "services": [
+    {
+      "id": "service-01",
+      "title": "Backend i .NET",
+      "description": "Design och implementation av skalbara API:er med tydliga gränser mellan domän, applikation och infrastruktur.",
+      "highlights": [
+        "ASP.NET Core Web API",
+        "Clean Architecture och CQRS",
+        "Testbar design och observability"
+      ]
+    },
+    {
+      "id": "service-02",
+      "title": "Frontend med moderna UI",
+      "description": "Bygger snabba och tillgängliga gränssnitt med fokus på tydlig informationsarkitektur och bra utvecklarupplevelse.",
+      "highlights": [
+        "Komponentdriven UI",
+        "Tillgänglighet",
+        "Responsiv design"
+      ]
+    },
+    {
+      "id": "service-03",
+      "title": "End-to-end leverans",
+      "description": "Från behovsanalys till produktion med fokus på kodkvalitet, automatisering och långsiktigt underhåll.",
+      "highlights": [
+        "Teknisk riktning och struktur",
+        "Prestanda och säkerhet",
+        "CI/CD och deployment-flöden"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-001",
+      "title": "Integration Concept",
+      "subtitle": "Integrations koncept för portfolio",
+      "description": "Projektet ska visa ett scenario där ett äldre projekt med gamla tekniker byts ut med ett modernare system.",
+      "tags": [".NET", ".NET Framework", "SQL Server", "Oracle","CQRS", "System design"],
+      "image": "/assets/projects/IntegrationConcept.png",
+      "links": {
+        "github": "https://github.com/UlrikJonasLove/Integration-Concept",
+        "demo": ""
+      },
+      "featured": true
+    },
+    {
+      "id": "project-002",
+      "title": "Authentication Concept",
+      "subtitle": "Authentication koncept för portfolio",
+      "description": "Ett gränssnittsfokuserat case med komponentbibliotek, tillståndshantering och optimerad rendering.",
+      "tags": ["Angular", "TypeScript", ".NET", "SQL Server", "CQRS", "SecurityHeaders", "A+ Security Rating"],
+      "image": "/assets/projects/AuthenticationConcept.png",
+      "links": {
+        "github": "https://github.com/UlrikJonasLove/Authentication-Concept",
+        "demo": "https://proud-pond-095b8270f.5.azurestaticapps.net/"
+      },
+      "featured": true
+    }
+  ]
+}
